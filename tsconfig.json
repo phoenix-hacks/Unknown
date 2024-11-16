@@ -1,0 +1,22 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",          // Set the base directory for resolving imports
+    "paths": {
+      "@/*": ["./*"]         // Map '@/' to the root directory
+    },
+    "noUnusedLocals": true,   // Ensure no unused variables in code
+    "noUnusedParameters": true, // Ensure no unused function parameters
+    "esModuleInterop": true   // For compatibility with CommonJS modules
+  },
+  "include": [
+    "**/*.ts",                // Include all TypeScript files
+    "**/*.tsx",               // Include all TypeScript JSX files
+    ".expo/types/**/*.ts",    // Include Expo types
+    "expo-env.d.ts"           // Include custom Expo environment types
+  ],
+  "exclude": [
+    "node_modules"            // Exclude dependencies
+  ]
+}
