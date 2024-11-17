@@ -10,6 +10,14 @@
     "noUnusedParameters": true, // Ensure no unused function parameters
     "esModuleInterop": true   // For compatibility with CommonJS modules
   },
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
   "include": [
     "**/*.ts",                // Include all TypeScript files
     "**/*.tsx",               // Include all TypeScript JSX files
